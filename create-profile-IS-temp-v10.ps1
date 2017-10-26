@@ -10,7 +10,7 @@
 #--------------------uncomment this if you want to connect to OV------------
 
 $Name1 = Read-Host 'Whhat is the name of ProfileTemplate?'
-$Numofpr1 = Read-Host 'How much Server Profiles you want to create?'
+$Numofpr1 = Read-Host 'How much Server Profiles do you want to create?'
 
 $spt=Get-HPOVServerProfileTemplate -Name $Name1
 for ($i=1;$i -like $Numofpr1;$i++)
