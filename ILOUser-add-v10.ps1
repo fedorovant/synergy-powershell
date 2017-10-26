@@ -30,16 +30,16 @@ $IloSession = Get-HPOVServer -Name $server1[$i].name | Get-HPOVIloSso -IloRestSe
 
 ##---User data---
 $PrivList = @(
-                    'RemoteConsolePriv',
-                    'iLOConfigPriv',
-                    'VirtualMediaPriv',
-                    'UserConfigPriv',
-                    'VirtualPowerAndResetPriv')
+    'RemoteConsolePriv',
+    'iLOConfigPriv',
+    'VirtualMediaPriv',
+    'UserConfigPriv',
+    'VirtualPowerAndResetPriv')
 $priv = @{}
-                foreach ($p in $PrivList)
-                {
-                    $priv.Add($p,$true)
-                }
+    foreach ($p in $PrivList)
+    {
+      $priv.Add($p,$true)
+    }
 $hp = @{}
     $hp.Add('LoginName',$ILOuser1)
     $hp.Add('Privileges',$priv)
