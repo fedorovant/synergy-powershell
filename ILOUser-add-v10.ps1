@@ -9,7 +9,8 @@
 #Connect-HPOVMgmt -Hostname $OVIP1 -UserName $OVuser1 -Password $OVpass11
 #--------------------uncomment this if you want to connect to OV------------
 
-Disable-HPRESTCertificateAuthentication
+Disable-HPERedfishCertificateAuthentication #Use this one if you're using new HPERedfishCmdlets module
+#Disable-HPRESTCertificateAuthentication #Use this one if you're using old HPRestCmdlet module
 
 write-host -ForegroundColor Yellow "Please Choose ILO credentials...."
 
