@@ -51,4 +51,5 @@ $Headers = @{}
     $Headers.Add('Oem',$oem)
 
 Invoke-HPRESTAction -href "/rest/v1/AccountService/Accounts" -data $headers -Session $IloSession
+Disconnect-HPREST -Session $IloSession
 }
