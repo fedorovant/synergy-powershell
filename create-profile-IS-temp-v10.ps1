@@ -10,12 +10,13 @@
 #--------------------uncomment this if you want to connect to OV------------
 
 $Name1 = Read-Host 'Whhat is the name of ProfileTemplate?'
+$ProfileName1 = Read-Host 'What is profile prefered Name'
 $Numofpr1 = Read-Host 'How much Server Profiles do you want to create?'
 
 $spt=Get-HPOVServerProfileTemplate -Name $Name1
 for ($i=1;$i -like $Numofpr1;$i++)
 {
 $server1=Get-HPOVServer -NoProfile -InputObject $spt | Select -first 1
-New-HPOVServerProfile -Name esxi-0$i -ServerProfileTemplate $spt -AssignmentType Server -Server $server1
-Get-HPOVServerProfile -Name esxi-0$i | Start-HPOVServer
+New-HPOVServerProfile -Name "$ProfileName1-0$i" -ServerProfileTemplate $spt -AssignmentType Server -Server $server1
+Get-HPOVServerProfile -Name "$ProfileName1-0$i" | Start-HPOVServer
 }
