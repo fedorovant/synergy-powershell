@@ -1,4 +1,5 @@
-﻿# This is thrd version (3.1) of Profile full circle Infrastrucute management as code (IaaC).
+# This is fourth version (4.0) of Profile full circle Infrastrucute management as code (IaaC).
+# You can find description at https://github.com/fedorovant/synergy-powershell/wiki#deploy-synergy-photon-v40-public 
 # At this Script we're create ESXi host with Image Streamer, Deploy Photon-OS on it, pull and start containers
 #Varibles:
 # - $PhotonCredential1 - root credential for Photon VM.
