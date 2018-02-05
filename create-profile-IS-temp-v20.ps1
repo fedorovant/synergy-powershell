@@ -48,6 +48,6 @@ $spt=Get-HPOVServerProfileTemplate -Name $Name1
 for ($i=1;$i -le $Numofpr1;$i++)
 {
 $server1=Get-HPOVServer -NoProfile -InputObject $spt | Select -first 1
-New-HPOVServerProfile -Name esxi-0$i -ServerProfileTemplate $spt -AssignmentType Server -Server $server1
-Get-HPOVServerProfile -Name esxi-0$i | Start-HPOVServer
+New-HPOVServerProfile -Name esxi-0$i -ServerProfileTemplate $spt -AssignmentType Server -Server $server1 -Async
+#Get-HPOVServerProfile -Name esxi-0$i | Start-HPOVServer
 }
