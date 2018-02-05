@@ -1,4 +1,4 @@
-# This is second version (2.0) of Profile creation from Template script
+# This is third version (3.0) of Profile creation from Template script
 #
 #--------------------uncomment this if you want to connect to OV------------
 #write-host -ForegroundColor Yellow "You need to autorize at OneView.."
