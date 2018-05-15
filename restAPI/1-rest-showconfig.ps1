@@ -1,12 +1,13 @@
-#This is example of Get configuration RestAPI request with PowerShell
+# This is example of Get configuration RestAPI request with PowerShell
 #
+# You need to get token for this request
 $json1 = @{
-      password='HP1nvent'
+      password='password'
       userName='administrator'
    }
 
 
-$url = "https://16.52.176.102/rest/login-sessions"
+$url = "https://<IP>/rest/login-sessions"
 $header1 = @{}
 $header1.add("Accept-Language", "en_US")
 $header1.add("X-Api-Version", "600")
