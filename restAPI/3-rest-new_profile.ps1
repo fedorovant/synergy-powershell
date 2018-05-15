@@ -2,12 +2,12 @@
 #
 # You need token for this request
 $json1 = @{
-      password='HP1nvent'
+      password='password'
       userName='administrator'
    }
 
 
-$url = "https://16.52.176.102/rest/login-sessions"
+$url = "https://<IP>/rest/login-sessions"
 $header1 = @{}
 $header1.add("Accept-Language", "en_US")
 $header1.add("X-Api-Version", "600")
@@ -20,11 +20,11 @@ $session1
 $json2 = @{
         type='ServerProfileV8'
         name='Profile101-rest'
-        serverHardwareTypeUri='/rest/server-hardware-types/1CE1EABC-5CA8-446C-A506-7F334B4CBBA9'
-        enclosureGroupUri='/rest/enclosure-groups/bcf9b58d-aa0f-4f24-b0dd-d9892a77d795'
+        serverHardwareTypeUri='/rest/server-hardware-types/<uri>'
+        enclosureGroupUri='/rest/enclosure-groups/<uri>'
    }
 
-$url2 = "https://16.52.176.102/rest/server-profiles"
+$url2 = "https://<IP>/rest/server-profiles"
 $header2 = @{}
 $header2.add("Accept-Language", "en_US")
 $header2.add("Auth", "$session1")
