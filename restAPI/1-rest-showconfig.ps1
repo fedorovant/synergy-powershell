@@ -17,7 +17,7 @@ $session1=$result.sessionID
 $session1
 
 
-$url2 = "https://16.52.176.102/rest/global-settings"
+$url2 = "https://<IP>/rest/global-settings"
 $header2 = @{}
 $header2.add("Accept-Language", "en_US")
 $header2.add("Auth", "$session1")
