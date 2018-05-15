@@ -4,7 +4,7 @@
 #{
 #process
 #    {
-    $url = "https://16.52.176.102/rest/version"
+    $url = "https://<IP>/rest/version"
     $header1 = @{}
     $header1.add("Accept-Language", "en_US")
     $body = @()
