@@ -27,7 +27,7 @@ $json2 = @{
     type='ethernet-networkV4'
    }
 
-$url2 = "https://16.52.176.102/rest/ethernet-networks"
+$url2 = "https://<IP>/rest/ethernet-networks"
 $header2 = @{}
 $header2.add("Accept-Language", "en_US")
 $header2.add("Auth", "$session1")
