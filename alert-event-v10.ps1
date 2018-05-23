@@ -58,7 +58,7 @@ $A1=1
 else
 {
 write-host -foreground Green "-------------------------------------------------------------"
-write-host -foreground Green "System 'RHEL74-VIP' is stable..."
+write-host -foreground Green "System $Profile1Name is stable..."
 write-host -foreground Green "-------------------------------------------------------------"
 }
 } until ($A1 -eq 1)
