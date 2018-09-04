@@ -13,7 +13,7 @@
 #Connect-HPOVMgmt -Hostname $OVIP1 -UserName $OVuser1 -Password $OVpass11
 #--------------------uncomment this if you want to connect to OV------------
 
-$tempVMhostIP='192.168.1.99'
+$tempVMhostIP='192.168.1.99' # please midify it for your own temporaty IP at ESXi golden image
 
 $profilename1 = Read-Host 'What is new server profile name?'
 $hostIP1 = Read-Host 'What is new host management ip?'
