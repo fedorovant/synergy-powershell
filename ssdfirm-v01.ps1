@@ -3,7 +3,7 @@
 #autorization
 $iloaddr="0"
 $user1="your login"
-$pass1="yourp ass"
+$pass1="your pass"
 $csvpath='c:\temp\ssdfirm.csv' # path to the ilocsvfile, example you can find in the same folder
 $csvpathresult='c:\temp\ssdfirmresult1.csv' # resultfile, can be converted to excel
 
