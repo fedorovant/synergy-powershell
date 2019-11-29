@@ -1,7 +1,7 @@
 # This is first version of Get SSD firmware data
 # You need Redfish PS module and ILO4/ILO5 for this script
 #autorization
-$iloaddr="192.168.143.202"
+$iloaddr="your ILO4/ILO5 IP"
 $user1="your login"
 $pass1="your pass"
 
@@ -24,11 +24,12 @@ foreach($sys in $info.Members.'@odata.id')
     foreach($drv in $sysdata.Members.'@odata.id')
     {
     $sysData1 = Get-HPERedfishDataRaw -odataid $drv -Session $session -DisableCertificateAuthentication
+    if ($sysData1.MediaType -like "SSD"){
     $ssdfirm+=$sysData1.MediaType
-    $ssdfirm+=$sysData1.FirmwareVersion
+    $ssdfirm+=$sysData1.FirmwareVersion}
 }
 }
 
-return $ssdfirm[0]
+return $ssdfirm
 
 Disconnect-HPERedfish -DisableCertificateAuthentication -Session $Session 
