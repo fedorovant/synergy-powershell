@@ -11,7 +11,7 @@ Connect-HPOVMgmt -UserName $user1 -Password $pass1 -Hostname $hostname1
 
 # Create inventory array
 $inventory1=@()
-$inventory1+='SerialNumber;Power;Model;Processor;Memory(GB);ILOaddress;MACs;OS IP;WWNs;RAIDs'
+$inventory1+='SerialNumber;Power;Model;Processor;Memory(GB);ILOaddress;MACs;WWNs;RAIDs'
 
 $data1=Get-HPOVServer
 
