@@ -13,16 +13,10 @@ Connect-HPOVMgmt -UserName $user1 -Password $pass1 -Hostname $hostname1
 $inventory1=@()
 $inventory1+='SerialNumber;Power;Model;Processor;Memory(GB);ILOaddress;MACs;OS IP;WWNs;RAIDs'
 
-
-
-
 $data1=Get-HPOVServer
 
-
-$Server1=$data1[1]
-
-#foreach($Server1 in $data1)
-#    {
+foreach($Server1 in $data1)
+    {
     #Ethernet adapters MAC array
     $ethertenadapters1=''
     #FC adapters WWN array
@@ -68,10 +62,6 @@ $Server1=$data1[1]
         }
 
     $inventory1+= $serverdata1.SerialNumber + ";" + $serverdata1.PowerState + ";" + $serverdata1.Model + ";" + $serverdata1.ProcessorSummary.Model + ";" + $serverdata1.MemorySummary.TotalSystemMemoryGiB + ";" + $Server1.mpHostInfo.mpIpAddresses[0].address + " " + $Server1.mpHostInfo.mpIpAddresses[1].address + ";" + $ethertenadapters1 + ";" + $fcadapters1 + ";" + $localraids
-
-#    }
-
-
+    }
 Disconnect-HPOVMgmt
-
 $inventory1 | Out-File $csvpathresult
