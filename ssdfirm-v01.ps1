@@ -2,8 +2,8 @@
 # You need Redfish PS module and ILO4/ILO5 for this script
 #autorization
 $iloaddr="0"
-$user1="hpadmin"
-$pass1="HP1nvent"
+$user1="your user"
+$pass1="your pass"
 $csvpath='c:\temp\ssdfirm.csv'
 $csvpathresult='c:\temp\ssdfirmresult1.csv'
 
