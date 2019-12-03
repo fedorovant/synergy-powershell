@@ -1,4 +1,4 @@
-#This is first version (1.0) of ILO user add script for all servers throught SSO token with POSH-OV module
+#This is first version (1.1) of ILO user add script for all servers throught SSO token with POSH-OV module
 #
 #--------------------uncomment this if you want to connect to OV------------
 #write-host -ForegroundColor Yellow "You need to autorize at OneView.."
@@ -27,6 +27,7 @@ sleep 1
 $server1=Get-HPOVServer
 for ($i=0;$i -lt $Num2; $i++) {
 $IloSession = Get-HPOVServer -Name $server1[$i].name | Get-HPOVIloSso -IloRestSession
+$ilosession.rootUri = $ilosession.rootUri -replace 'rest','redfish'
 #$UserILO1=Get-HPRESTDataRaw -Href "/rest/v1/AccountService/Accounts" -Session $IloSession
 
 ##---User data---
