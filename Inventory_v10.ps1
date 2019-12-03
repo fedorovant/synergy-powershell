@@ -1,5 +1,6 @@
-# This is universal inventory script for (ILO4\ILO5) DL\ML\BL\Apollo\Synergy Servers
+# This is the first (v1.0) universal inventory script for (ILO4\ILO5) DL\ML\BL\Apollo\Synergy Servers
 # It need HP Posh-OV 420 or higher cmdlet module
+# (c) Fedorov Anton
 #
 #autorization
 $user1=" your OV user"
