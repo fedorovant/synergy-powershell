@@ -1,5 +1,6 @@
 # This is first version of Get SSD firmware data. It got all your servers ILO and return CSV with affected SSD drives.
-# You need Redfish PS module and ILO4/ILO5 for this script
+# (c) Fedorov Anton.
+# You need Redfish PS module and ILO4/ILO5 for this script. ILO4 fw vwersion must be 2.62+.
 #autorization
 $iloaddr="0"
 $user1="your user"
