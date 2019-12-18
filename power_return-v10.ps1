@@ -2,9 +2,9 @@
 # Mandatory prerequsite: ILO power option must be always-off at all servers!
 #
 #varibles
-$ovip="192.168.143.10"
-$user1="administrator"
-$pass1="HP1nvent"
+$ovip="your OV IP"
+$user1="your user"
+$pass1="yuor password"
 $csvpathresult='c:\temp\serverpower.csv'
 $event1=0
 
