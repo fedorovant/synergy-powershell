@@ -1,10 +1,10 @@
 # This is the first version (1.0) of power rollback script. It comeback power of the servers that was 'on' before blackout
-# Mandatory prerequsite: ILO power option must be always-off at all servers!
+# Mandatory prerequisites: ILO power option must be always-off at all servers!
 #
 #varibles
 $ovip="your OV IP"
 $user1="your user"
-$pass1="yuor password"
+$pass1="your password"
 $csvpathresult='c:\temp\serverpower.csv'
 $event1=0
 
