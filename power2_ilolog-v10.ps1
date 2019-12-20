@@ -2,10 +2,11 @@
 # It comeback power of the servers that was 'on' before blackout based on ILO power logs.
 # Mandatory prerequisites: ILO power option must be always-off at all servers!
 #autorization
-$user1="Administrator"
-$pass1="HP1nvent"
-$hostname1="192.168.143.10"
+$user1="your user"
+$pass1="your password"
+$hostname1="your IP"
 
+#try to initiate OV connection
 Try
 {
     Connect-HPOVMgmt -UserName $user1 -Password $pass1 -Hostname $hostname1
