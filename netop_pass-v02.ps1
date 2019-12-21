@@ -1,7 +1,7 @@
 # Original script by jullienl available here: https://github.com/jullienl/HPE-Synergy-OneView-demos/blob/master/Powershell/Virtual%20Connect/Set-netopUser.ps1
 # I only modified part for OV 5.0 and change type from webRequest for invokeRequest
 #
-#This script sets the password for the netop VC CLI user in the Synergy VC interconnects
+# This script sets the password for the netop VC CLI user in the Synergy VC interconnects
 #
 # Note: netop user is only supported for Virtual Connect SE 40Gb F8 Modules and Virtual Connect SE 100Gb F32 Modules for Synergy.
 #
