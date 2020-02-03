@@ -11,7 +11,6 @@ $event1=0
 $encstatus=@()
 #$encstatus+='zero'
 $N=0
-#$SecurePassword=ConvertTo-SecureString $pass1 –asplaintext –force
 
 #Comments
 #Lag for Composer offline ~2:30 min
