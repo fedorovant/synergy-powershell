@@ -30,7 +30,7 @@ foreach ($s1 in $serverdata)
                             $notempty1=1
                         }
                     }
-                    if ($notempty1==1)
+                    if ($notempty1 -eq 1)
                     {
                         $server1=Get-HPOVServer -Name $s1.ServerName
                         Write-Host -ForegroundColor Green "Rollback server power for "$s1.ServerName""
