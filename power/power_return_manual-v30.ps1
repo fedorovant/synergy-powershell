@@ -7,9 +7,11 @@ Param (
 [string]$csvfile
 )
 #varibles
+$passpath ="c:\temp\passfile.txt"
+$keypath ="c:\temp\password_aes.key"
 $user1="administrator"
-$pass1 = Get-Content c:\temp\passfile.txt | ConvertTo-SecureString -Key (get-content c:\temp\password_aes.key)
-$csvpathresult="c:\temp\power\$csvfile" #need to be param
+$pass1 = Get-Content $passpath  | ConvertTo-SecureString -Key (get-content $keypath)
+$csvpathresult=$csvfile #need to be param
 
 try{$serverdata=Import-Csv -Path $csvpathresult -Delimiter ';'}
 catch{Write-Host -ForegroundColor Red "I can't connect to this CSV file"; break}
