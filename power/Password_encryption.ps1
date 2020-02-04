@@ -10,4 +10,4 @@ $Cred = Get-Credential
 $AESKey = New-Object Byte[] 32
 [Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($AESKey)
 $AESKey | out-file $keypath
-$Cred.Password| ConvertFrom-SecureString -Key (get-content C:\temp\password_aes.key)| Set-Content $passpath
+$Cred.Password| ConvertFrom-SecureString -Key (get-content $keypath)| Set-Content $passpath
