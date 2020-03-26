@@ -1,4 +1,4 @@
-# This is first version of Get SSD firmware data. It got all your servers ILO and return CSV with affected SSD drives.
+# This is second version of Get SSD firmware data. It got all your servers ILO and return CSV with affected SSD drives.
 # (c) Fedorov Anton.
 # You need Redfish PS module and ILO4/ILO5 for this script. ILO4 fw vwersion must be 2.62+.
 #autorization
@@ -13,7 +13,7 @@ $ssdfirm= @()
 $ssdfirm+='Server_Serial;Drive;Capacity;Drive_Model;Firmware;Status'
 
 #data of BAD models
-$baddata1= @("VO0480JFDGT","VO0960JFDGU","VO1920JFDGV","VO3840JFDHA","MO0400JFFCF","MO0800JFFCH","MO1600JFFCK","MO3200JFFCL","VO000480JWDAR","VO000960JWDAT","VO001920JWDAU","VO003840JWDAV","VO007680JWCNK","VO015300JWCNL","VK000960JWSSQ","VK001920JWSSR","VK003840JWSST","VK003840JWSST","VK007680JWSSU","VO015300JWSSV")
+$baddata1= @("MO1600JVYPR","MK0800JVYPQ","EO1600JVYPP","EK0800JVYPN","VO0480JFDGT","VO0960JFDGU","VO1920JFDGV","VO3840JFDHA","MO0400JFFCF","MO0800JFFCH","MO1600JFFCK","MO3200JFFCL","VO000480JWDAR","VO000960JWDAT","VO001920JWDAU","VO003840JWDAV","VO007680JWCNK","VO015300JWCNL","VK000960JWSSQ","VK001920JWSSR","VK003840JWSST","VK003840JWSST","VK007680JWSSU","VO015300JWSSV")
 $numofbad=0
 
 #Import ILO IP addresses
