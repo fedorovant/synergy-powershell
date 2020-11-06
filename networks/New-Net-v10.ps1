@@ -1,14 +1,5 @@
 #This is first version (1.0) of new network creation and update of Logical Enclosure with POSH-OV module
 #
-#--------------------uncomment this if you want to connect to OV------------
-#write-host -ForegroundColor Yellow "You need to autorize at OneView.."
-#$OVIP1 = Read-Host 'What is OV IP?'
-#$OVuser1 = Read-Host 'What is OV Username?'
-#$OVpass1 = Read-Host 'What is OV Username?' -AsSecureString
-#$OVpass11 = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($OVpass1))
-#Connect-HPOVMgmt -Hostname $OVIP1 -UserName $OVuser1 -Password $OVpass11
-#--------------------uncomment this if you want to connect to OV------------
-#
 #This is varibles used at script:
 #-------------varibles---
 $pwd="HP1nvent"
