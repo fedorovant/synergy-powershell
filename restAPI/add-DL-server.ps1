@@ -36,7 +36,7 @@ $session1=$result.sessionID
 
 #-----add new server----
 $json2 = @{
-      hostname='192.168.143.202'
+      hostname='192.168.143.202' #ILO IP and credentials
       username='hpadmin'
       password='password'
       force='true'
