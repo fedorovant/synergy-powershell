@@ -50,7 +50,7 @@ foreach($Server1 in $data1)
     $oem.Add('Hpe',$hp)
     $user = @{}
     $user.Add('UserName',$ILOuser1)
-    $user.Add('Password',$ILOpass1)
+    $user.Add('Password',$ILOpass11)
     $user.Add('Oem',$oem)
     $ret = Invoke-HPERedfishAction -odataid $accOdataId -Data $user -Session $ilosession -DisableCertificateAuthentication
     $ret
