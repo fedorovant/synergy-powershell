@@ -1,4 +1,4 @@
-#This is first version (1.1) of ILO user add script for all servers throught SSO token with POSH-OV module
+#This is version (1.1) of ILO user add script for all servers throught SSO token with POSH-OV module
 #
 #--------------------uncomment this if you want to connect to OV------------
 #write-host -ForegroundColor Yellow "You need to autorize at OneView.."
@@ -45,6 +45,7 @@ $priv = @{}
 $hp = @{}
     $hp.Add('LoginName',$ILOuser1)
     $hp.Add('Privileges',$priv)
+#ILO4 only 
 $oem = @{}
     $oem.Add('Hp',$hp)
 $Headers = @{}
